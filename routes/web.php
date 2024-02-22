@@ -35,8 +35,6 @@ Route::get('/articles/{id}', [ArticleController::class,'articles']);
 Route::resource('photos', PhotoController::class)->only([
     'index', 'show'
 ]);
-Route::get('/greeting', function () {
-    return view('blog.hello', ['name' => 'Ibnu Tsalis Assalam']);
-});
+Route::get('/greeting', [WelcomeController::class,'greeting']);
     
    
