@@ -26,7 +26,7 @@ Route::get('/world', function () {
 Route::get('/about', function () {
     return '2141762073 - Ibnu Tsalis Assalam';
 });
-Route::get('/user/{name}', function ($name) {
+Route::get('/user/{name?}', function ($name='John') {
     return 'Nama saya '.$name;
 });
 Route::get('/posts/{post}/comments/{comment}', function ($postId, $commentId) {
