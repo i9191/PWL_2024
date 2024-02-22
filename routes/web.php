@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    return "Selamat Datang";
+});
+Route::get('/hello', function () {
+    return 'Hello World';
+});
+Route::get('/world', function () {
+    return 'World';
+});
+Route::get('/about', function () {
+    return '2141762073 - Ibnu Tsalis Assalam';
 });
